@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Adrian"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-06-12 10:51:25 AM"/>
+        <attribute name="created" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDg6Mjg6MDYgUE07MjYxMw=="/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDg6MzU6MzIgUE07MTtBZHJpYW47TVNJLUdMNjM5U0Q7MjAyMy0wNi0wMzswNjozMzo1NiBQTTvEhndpY3plbmllXzRfWFkuZnByZzs3NDY4"/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDQ7MDE6MTY6MjAgQU07NzsyNjk5"/>
+        <attribute name="edited" value="NDg3OTg7TEFQVE9QLUFOUzZRUjJPOzIwMjMtMDYtMTI7MTA6NTE6MjUgQU07MzsyNzI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="TR&#211;JK&#260;TY"/>
+        </body>
+    </function>
+    <function name="TR&#211;JK&#260;TY" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;PODAJ WYMIARY BOK&#211;W TR&#211;JK&#260;TA A,B,C&quot;" newline="True"/>
+            <declare name="Decyzja" type="String" array="False" size=""/>
+            <declare name="A, B, C, SUMA" type="Integer" array="False" size=""/>
+            <output expression="&quot;PODAJ WYMIARY BOK&#211;W A,B,C&quot;" newline="True"/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <if expression="A+B&lt;=C||B+C&lt;=A||C+A&lt;=B">
+                <then>
+                    <output expression="&quot;NIE MO&#379;NA UTWORZY&#262; TR&#211;JK&#260;TA&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="A==B||B==C||C==A">
+                        <then>
+                            <output expression="&quot;MO&#379;NA UTWORZY&#262; TR&#211;JK&#260;T R&#211;WNOBOCZNY&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;NIE MO&#379;NA UTWORZY&#262; TR&#211;JK&#260;TA R&#211;WNOBOCZNEGO&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;JE&#346;LI CHCESZ SPRAWDZI&#262; NAST&#280;PNY TR&#211;JK&#260;T WPISZ TAK&quot;" newline="True"/>
+            <input variable="Decyzja"/>
+            <if expression="Decyzja == &quot;TAK&quot;">
+                <then>
+                    <call expression="TR&#211;JK&#260;TY"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

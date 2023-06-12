@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Adrian"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-06-12 11:44:25 AM"/>
+        <attribute name="created" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDk6MDU6MDggUE07MjYxMQ=="/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDk6MTA6MjMgUE07MTtBZHJpYW47TVNJLUdMNjM5U0Q7MjAyMy0wNi0wMzswODoyODowNiBQTTvEhndpY3plbmllXzZfQm9raS5mcHJnOzc2Nzc="/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDk6MTM6NDggUE07NDsyNzI1"/>
+        <attribute name="edited" value="NDg3OTg7TEFQVE9QLUFOUzZRUjJPOzIwMjMtMDYtMTI7MTE6NDQ6MjUgQU07MzsyNzI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="KALKULATOR"/>
+        </body>
+    </function>
+    <function name="KALKULATOR" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;PODAJ LICZB&#280; A&quot;" newline="True"/>
+            <declare name="Decyzja" type="String" array="False" size=""/>
+            <declare name="A, B, WYNIK, DZIA&#321;ANIE" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <output expression="&quot;PODAJ LICZB&#280; B&quot;" newline="True"/>
+            <input variable="B"/>
+            <output expression="&quot;ABY ODJ&#260;&#262; WPISZ 1, ABY DODA&#262; WPISZ 2, ABY POMNO&#379;Y&#262; WPISZ 3, ABY PODZIELI&#262; WPISZ 4&quot;" newline="True"/>
+            <input variable="DZIA&#321;ANIE"/>
+            <if expression="DZIA&#321;ANIE==1">
+                <then>
+                    <output expression="A-B" newline="True"/>
+                </then>
+                <else>
+                    <if expression="DZIA&#321;ANIE==2">
+                        <then>
+                            <output expression="A+B" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="DZIA&#321;ANIE==3">
+                                <then>
+                                    <output expression="A*B" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="DZIA&#321;ANIE==4">
+                                        <then>
+                                            <output expression="A/B" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;JE&#346;LI CHCESZ WYKONA&#262; NAST&#280;PNE DZIA&#321;ANIE WPISZ TAK&quot;" newline="True"/>
+            <input variable="Decyzja"/>
+            <if expression="Decyzja == &quot;TAK&quot;">
+                <then>
+                    <call expression="KALKULATOR"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

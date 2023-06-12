@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Adrian"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-06-08 08:53:07 PM"/>
+        <attribute name="created" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDU6MTI6MDkgUE07MjYwNg=="/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDY6MzE6MDQgUE07MTtBZHJpYW47TVNJLUdMNjM5U0Q7MjAyMy0wNi0wMzswNjoxODo0OSBQTTvEhndpY3plbmllXzNfQk1JLmZwcmc7NzUwNA=="/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDQ7MDE6MDg6MzQgQU07ODsyNzA2"/>
+        <attribute name="edited" value="NDg3OTg7TEFQVE9QLUFOUzZRUjJPOzIwMjMtMDYtMDg7MDg6NTM6MDcgUE07MTsyNzUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="&#346;REDNIA"/>
+        </body>
+    </function>
+    <function name="&#346;EDNIA" type="None" variable="LiczbaNr1">
+        <parameters/>
+        <body>
+            <declare name="DECYZJA" type="String" array="False" size=""/>
+            <declare name="LICZBA1, LICZBA2, LICZBA3, &#346;REDNIA" type="Real" array="False" size=""/>
+            <output expression="&quot;PIERWSZA LICZBA&quot;" newline="True"/>
+            <input variable="LICZBA1"/>
+            <output expression="&quot;DRUGA LICZBA&quot;" newline="True"/>
+            <input variable="LICZBA2"/>
+            <output expression="&quot;TRZECIA LICZBA&quot;" newline="True"/>
+            <input variable="LICZBA3"/>
+            <assign variable="&#347;rednia" expression="(LICZBA1+LICZBA2+LICZBA3)/3"/>
+            <output expression="&quot;&#346;REDNIA LICZB WYNOSI: &quot; &amp;&#347;rednia" newline="True"/>
+            <output expression="&quot;JE&#346;LI CHCESZ OBLICZY&#262; &#346;REDNI&#260; JESZCZE RAZ WPISZ TAK&quot;" newline="True"/>
+            <input variable="Decyzja"/>
+            <if expression="Decyzja == &quot;TAK&quot;">
+                <then>
+                    <call expression="&#346;rednia"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

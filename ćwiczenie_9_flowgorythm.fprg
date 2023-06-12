@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Adrian"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-06-12 11:54:01 AM"/>
+        <attribute name="created" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDk6MTQ6MzMgUE07MjYwOQ=="/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDk6MjQ6MDUgUE07MTtBZHJpYW47TVNJLUdMNjM5U0Q7MjAyMy0wNi0wMzswODoyODowNiBQTTvEhndpY3plbmllXzZfQm9raS5mcHJnOzc2ODI="/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDk6MjQ6NDIgUE07MjsyNzE5"/>
+        <attribute name="edited" value="NDg3OTg7TEFQVE9QLUFOUzZRUjJPOzIwMjMtMDYtMTI7MTE6NTQ6MDEgQU07MTsyNzIy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="LICZBY"/>
+        </body>
+    </function>
+    <function name="LICZBY" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;PODAJ LICZB&#280; A&quot;" newline="True"/>
+            <declare name="Decyzja" type="String" array="False" size=""/>
+            <declare name="A, B, C" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <output expression="&quot;PODAJ LICZB&#280; B&quot;" newline="True"/>
+            <input variable="B"/>
+            <output expression="&quot;PODAJ LICZB&#280; C&quot;" newline="True"/>
+            <input variable="C"/>
+            <assign variable="A" expression="A-B"/>
+            <assign variable="B" expression="B+A"/>
+            <assign variable="A" expression="B-A"/>
+            <assign variable="A" expression="A-C"/>
+            <assign variable="C" expression="C+A"/>
+            <assign variable="A" expression="C-A"/>
+            <output expression="&quot;A=&quot;&amp;A &amp;&quot;,B=&quot;&amp;B &amp;&quot;,C=&quot;&amp;C" newline="True"/>
+            <output expression="&quot;JE&#346;LI CHCESZ ZAMIENI&#262; NAST&#280;PUJ&#260;CE LICZBY WPISZ POWT&#211;RZ JE&#346;LI NIE WPISZ ZAKO&#323;CZ&quot;" newline="True"/>
+            <input variable="Decyzja"/>
+            <if expression="Decyzja == &quot;POWT&#211;RZ&quot;">
+                <then>
+                    <call expression="LICZBY"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Adrian"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-06-09 05:38:44 PM"/>
+        <attribute name="created" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDU6NTE6MDcgUE07MjYwNw=="/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDY6Mjk6NTEgUE07MTtBZHJpYW47TVNJLUdMNjM5U0Q7MjAyMy0wNi0wMzswNjoxODo0OSBQTTvEhndpY3plbmllXzNfQk1JLmZwcmc7NzUxMw=="/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDQ7MDE6MDg6MTMgQU07MTU7Mjc0OQ=="/>
+        <attribute name="edited" value="NDg3OTg7TEFQVE9QLUFOUzZRUjJPOzIwMjMtMDYtMDk7MDU6Mzg6NDQgUE07MTsyNzU1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="OBW&#211;DKO&#321;A"/>
+        </body>
+    </function>
+    <function name="OBW&#211;DKO&#321;A" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="OBW&#211;DKO&#321;A, POLEKO&#321;A, PROMIE&#323;KO&#321;A, LICZBAPI" type="Real" array="False" size=""/>
+            <declare name="DECYZJA" type="String" array="False" size=""/>
+            <assign variable="LICZBAPI" expression="3.141592"/>
+            <output expression="&quot;ABY OBLICZY&#262; OB&#211;WD KO&#321;A PODAJ JEGO POLE&quot;" newline="True"/>
+            <input variable="POLEKO&#321;A"/>
+            <assign variable="PROMIE&#323;KO&#321;A" expression="sqrt(POLEKO&#321;A/LICZBAPI)"/>
+            <assign variable="OBW&#211;DKO&#321;A" expression="2*LICZBAPI*(sqrt(POLEKO&#321;A/LICZBAPI))"/>
+            <output expression="&quot;OBW&#211;D KO&#321;A O POLU: &quot; &amp;POLEKO&#321;A &amp;&quot; WYNOSI: &quot; &amp;OBW&#211;DKO&#321;A" newline="True"/>
+            <output expression="&quot;JE&#346;LI CHCESZ OBICZY&#262; OBW&#211;D JESZCZE RAZ NAPISZ TAK&quot;" newline="True"/>
+            <input variable="DECYZJA"/>
+            <if expression="Decyzja == &quot;TAK&quot;">
+                <then>
+                    <call expression="OBW&#211;DKO&#321;A"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Adrian"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-06-09 06:00:51 PM"/>
+        <attribute name="created" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDY6MzM6NTYgUE07MjYxMg=="/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDY6NTA6MzQgUE07MTtBZHJpYW47TVNJLUdMNjM5U0Q7MjAyMy0wNi0wMzswNTo1MTowNyBQTTvEhndpY3plbmllXzJfT2J3w7NkLmZwcmc7NzkyMA=="/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDg6MTg6MzkgUE07OTsyNzM0"/>
+        <attribute name="edited" value="NDg3OTg7TEFQVE9QLUFOUzZRUjJPOzIwMjMtMDYtMDk7MDY6MDA6NTEgUE07MTsyNzQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="LICZBY"/>
+        </body>
+    </function>
+    <function name="LICZBY" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;PODAJ LICZBY A,B,C,D ABY OBLICZY&#262; LICZNIK X I MIANOWNIK Y&quot;" newline="True"/>
+            <declare name="DECYZJA" type="String" array="False" size=""/>
+            <declare name="X, Y, XY" type="Real" array="False" size=""/>
+            <declare name="A, B, C, D" type="Real" array="False" size=""/>
+            <output expression="&quot;PODAJ LICZB&#280; A&quot;" newline="True"/>
+            <input variable="A"/>
+            <output expression="&quot;PODAJ LICZB&#280; B&quot;" newline="True"/>
+            <input variable="B"/>
+            <output expression="&quot;PODAJ LICZB&#280; C&quot;" newline="True"/>
+            <input variable="C"/>
+            <output expression="&quot;PODAJ LICZB&#280; D&quot;" newline="True"/>
+            <input variable="D"/>
+            <if expression="D==0 || B==0">
+                <then>
+                    <output expression="&quot;BRAK ROZWI&#260;ZANIA, LICZBA B LUB D WYNOSI 0&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="XY" expression="(A*D)/(B*D)+(C*B)/(D*B)"/>
+                    <assign variable="x" expression="(A*D)"/>
+                    <assign variable="y" expression="(C*B)"/>
+                    <while expression="X%2==0 &amp;&amp; Y%2==0">
+                        <assign variable="X" expression="X/2"/>
+                        <assign variable="Y" expression="Y/2"/>
+                    </while>
+                    <while expression="X%3==0 &amp;&amp; Y%3==0">
+                        <assign variable="X" expression="X/3"/>
+                        <assign variable="Y" expression="Y/3"/>
+                    </while>
+                    <while expression="X%5==0 &amp;&amp; Y%5==0">
+                        <assign variable="X" expression="X/5"/>
+                        <assign variable="Y" expression="Y/5"/>
+                    </while>
+                    <output expression="&quot;LICZNIK X TO: &quot; &amp;X" newline="True"/>
+                    <output expression="&quot;MIANOWNIK Y TO: &quot; &amp;Y" newline="True"/>
+                    <output expression="&quot;XY TO:&quot; &amp;XY" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;ABY DOKONA&#262; OBLICZE&#323; JESZCZE RAZ NAPISZ TAK&quot;" newline="True"/>
+            <input variable="DECYZJA"/>
+            <if expression="Decyzja == &quot;TAK&quot;">
+                <then>
+                    <call expression="LICZBY"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Adrian"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-06-09 05:49:06 PM"/>
+        <attribute name="created" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDY6MTg6NDkgUE07MjYxNw=="/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDY6Mjk6MjYgUE07NTsyNzI2"/>
+        <attribute name="edited" value="NDg3OTg7TEFQVE9QLUFOUzZRUjJPOzIwMjMtMDYtMDk7MDU6NDk6MDYgUE07MTsyNzU1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="BMI"/>
+        </body>
+    </function>
+    <function name="BMI" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="WAGA, WZROST, BMI" type="Real" array="False" size=""/>
+            <declare name="DECYZJA" type="String" array="False" size=""/>
+            <output expression="&quot;WZROST W CENTYMETRACH&quot;" newline="True"/>
+            <input variable="WZROST"/>
+            <output expression="&quot;WAGA W KILOGRAMACH&quot;" newline="True"/>
+            <input variable="WAGA"/>
+            <assign variable="BMI" expression="WAGA/((WZROST/100)*(WZROST/100))"/>
+            <output expression="&quot;BMI : &quot; &amp;BMI" newline="True"/>
+            <output expression="&quot;JE&#346;LI CHESZ OBLICZY&#262; BMI JESZCZE RAZ NAPISZ TAK&quot;" newline="True"/>
+            <input variable="DECYZJA"/>
+            <if expression="Decyzja == &quot;TAK&quot;">
+                <then>
+                    <call expression="BMI"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Adrian"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-06-12 11:01:56 AM"/>
+        <attribute name="created" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDg6Mzg6MTIgUE07MjYxMQ=="/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDg6NDA6MjEgUE07MTtBZHJpYW47TVNJLUdMNjM5U0Q7MjAyMy0wNi0wMzswNjozMzo1NiBQTTvEhndpY3plbmllXzRfWFkuZnByZzs3NDYy"/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDk6MDU6MDUgUE07NDsyNzE5"/>
+        <attribute name="edited" value="NDg3OTg7TEFQVE9QLUFOUzZRUjJPOzIwMjMtMDYtMTI7MTE6MDE6NTYgQU07NDsyNzI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="KO&#321;O"/>
+        </body>
+    </function>
+    <function name="KO&#321;O" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;PODAJ KOORDYNATY A, B WYBRANEGO PUNKTU&quot;" newline="True"/>
+            <declare name="Decyzja" type="String" array="False" size=""/>
+            <declare name="A, B, X, Y, R" type="Integer" array="False" size=""/>
+            <assign variable="A" expression="0"/>
+            <assign variable="B" expression="0"/>
+            <output expression="&quot;A&quot;" newline="True"/>
+            <input variable="X"/>
+            <output expression="&quot;B&quot;" newline="True"/>
+            <input variable="Y"/>
+            <output expression="&quot;PROMIE&#323;&quot;" newline="True"/>
+            <input variable="R"/>
+            <if expression="((X-A)*(X-A))+((Y-B)*(Y-B))&gt;=R*R">
+                <then>
+                    <output expression="&quot;PUNKT ZNAJDUJE SI&#280; NA LINI KO&#321;A LUB PO ZA NI&#260;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;PUNKT ZNAJDUJE SI&#280; W KOLE&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;JE&#346;LI CHCESZ POWT&#211;RZY&#262; WPISZ TAK.&quot;" newline="True"/>
+            <input variable="Decyzja"/>
+            <if expression="Decyzja == &quot;TAK&quot;">
+                <then>
+                    <call expression="KO&#321;O"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

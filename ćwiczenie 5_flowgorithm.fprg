@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Adrian"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-06-12 10:40:54 AM"/>
+        <attribute name="created" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDg6MTg6NDAgUE07MjYxMA=="/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDM7MDg6MjQ6MjkgUE07MTtBZHJpYW47TVNJLUdMNjM5U0Q7MjAyMy0wNi0wMzswNTo1MTowNyBQTTvEhndpY3plbmllXzJfT2J3w7NkLmZwcmc7NzkyNw=="/>
+        <attribute name="edited" value="QWRyaWFuO01TSS1HTDYzOVNEOzIwMjMtMDYtMDQ7MDE6MTE6MzggQU07NjsyNzAy"/>
+        <attribute name="edited" value="NDg3OTg7TEFQVE9QLUFOUzZRUjJPOzIwMjMtMDYtMTI7MTA6NDA6NTQgQU07MzsyNzI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="WI&#280;KSZALICZBA"/>
+        </body>
+    </function>
+    <function name="WI&#280;KSZALICZBA" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B" type="Integer" array="False" size=""/>
+            <declare name="Decyzja" type="String" array="False" size=""/>
+            <output expression="&quot;PODAJ KOLEJNO LICZBY A, B&quot;" newline="True"/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <if expression="A&gt;B">
+                <then>
+                    <output expression="&quot;Liczba A=&quot; &amp;A &amp;&quot; JEST WI&#280;KSZA OD B=&quot; &amp;B" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;LICZBA B=&quot; &amp;B &amp;&quot; JEST WI&#280;KSZA OD A=&quot; &amp;A" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;JE&#346;LI CHCESZ POR&#211;WNA&#262; DWIE KOLEJNE LICZBY WPISZ TAK&quot;" newline="True"/>
+            <input variable="Decyzja"/>
+            <if expression="Decyzja == &quot;TAK&quot;">
+                <then>
+                    <call expression="WI&#280;KSZALICZBA"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
